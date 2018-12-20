@@ -28,7 +28,7 @@ open class WebSocketClient: WebSocket {
   private let delegateQueue = DispatchQueue(label: "Telegraph.WebSocketClient.delegate")
 
   private let endpoint: Endpoint
-  private var socket: TCPSocket?
+  public var socket: TCPSocket?
   private var httpConnection: HTTPConnection?
   private var webSocketConnection: WebSocketConnection?
 
